@@ -24,43 +24,45 @@ $(function(){
          
          $(window).scroll(function(e){
 
-             let scrollBottom = $(window).scrollTop()+$(window).height()-1;
-             let scrollTop = $(window).scrollTop();
+            let scrollBottom = $(window).scrollTop()+$(window).height()-1;
+            let scrollTop = $(window).scrollTop();
 
-             if(pos(".block_aboutUs").top < scrollBottom && pos($(".block_aboutUs")).bottom >scrollTop) {
-   
-                 $('.block_aboutUs .flex_block').css('animation','slideUp 1.5s');
-              
-                } else if (($(window).height() )> scrollBottom){
-                    $('.block_aboutUs .flex_block').css('animation','none');
-                    
-                }
-                 if(pos(".block_team .flex_block").top < scrollBottom && pos(".block_team .flex_block").bottom >scrollTop) {
-                 
-                    $('.block_team .flex_block').css('animation','slideUp 1.5s');
-                 
-                   } else if (($(window).height() )> scrollBottom){
-                       $('.block_team .flex_block').css('animation','none');
-                      
-                   }  
-
-                   if(pos(".booking .flex_block").top < scrollBottom && pos(".booking .flex_block").bottom >scrollTop) {
-                 
-                    $('.booking_form_block').css('animation','scale 1.5s');
-                 
-                   } else if (($(window).height() )> scrollBottom){
-                       $('.booking_form_block').css('animation','none');
-                       console.log('no')
-                   }  
+            if(pos(".block_aboutUs").top < scrollBottom && pos($(".block_aboutUs")).bottom >scrollTop) {
+  
+                $('.block_aboutUs .flex_block').css('animation','slideUp 1.5s');
+             
+               } 
+                if(pos(".block_team .flex_block").top < scrollBottom && pos(".block_team .flex_block").bottom >scrollTop) {
                 
-                   if(pos(".block_specialties .flex_block").top < scrollBottom && pos(".block_specialties .flex_block").bottom >scrollTop) {
-                 
-                    $('.block_specialties .flex_block').css('animation','slideUp 1.5s');
-                 
-                   } else if (($(window).height() )> scrollBottom){
-                       $('.block_specialties .flex_block').css('animation','none');
-                      
-                   }  
+                   $('.block_team .flex_block').css('animation','slideUp 1.5s');
+                
+                  } 
+
+                  if(pos(".booking .flex_block").top < scrollBottom && pos(".booking .flex_block").bottom >scrollTop) {
+                
+                   $('.booking_form_block').css('animation','scale 1.5s');
+                
+                  }  
+               
+                  if(pos(".block_specialties .flex_block").top < scrollBottom && pos(".block_specialties .flex_block").bottom >scrollTop) {
+                
+                   $('.block_specialties .flex_block').css('animation','slideUp 1.5s');
+                
+                  }   
+                  if(pos(".block_menu .menu").top < scrollBottom && pos(".block_menu .menu").bottom >scrollTop) {
+                
+                   $('.block_menu .menu').css('animation','slideUp 1.5s');
+                
+                  } 
+                  if(pos(".block_privateEvents .flex_block").top < scrollBottom && pos(".block_privateEvents .flex_block").bottom >scrollTop) {
+                
+                   $('.block_privateEvents .flex_block').css('animation','slideUp 1.5s');
+                
+                  } 
+                  else if (($(window).height() )> scrollBottom){
+                   $('.block_aboutUs .flex_block, .block_privateEvents .flex_block, .block_menu .menu, .block_specialties .flex_block, .booking_form_block, .block_team .flex_block ').css('animation','none');
+                  
+               }
          }) 
 
 
