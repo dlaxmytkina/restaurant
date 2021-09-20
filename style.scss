@@ -336,12 +336,14 @@ h4 {
         margin-left: calc(50% - 2.5rem);
     }
 }
+
+.block_aboutUs,  .block_specialties, .block_privateEvents, .block_team{
+    .flex_block{
+        opacity: 0;}
+}
 .block_aboutUs {
     padding: 10rem 0;
-    .flex_block{
-
-    
-    display: none;}
+   
     .img {
         @include img(1);
     }
@@ -457,7 +459,11 @@ h4 {
 .booking {
     padding: 10rem 0 0 0;
     font-family: "Open Sans normal";
+    .flex_block{
+        display: flex;
+    }
     &_form_block {
+        opacity: 0;
         @include centerFlex(auto, 45%);
         flex-direction: column;
         .color-line {
@@ -498,6 +504,7 @@ h4 {
 .block_menu {
     padding: 10rem 0 8rem 0;
     .menu {
+        opacity: 0;
         &_caption {
             margin: 0 auto;
             @include centerFlex(auto, 50%);
