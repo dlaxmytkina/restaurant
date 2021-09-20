@@ -3,18 +3,17 @@ $(function(){
 
 
         
-        $('.main_block a').click (function(e) {
+        $('a').click (function(e) {
             
           e.preventDefault();
           var id  = $(this).attr('href'),
               top = $(id).offset().top;
-            console.log(top);  
           $('html, body').animate({scrollTop: top}, 1500);
          
          });
 
          function pos (elem){
-             var elem_top = $(elem).position().top,
+             var elem_top = $(elem).offset().top,
               elem_bottom = elem_top + $(elem).outerHeight();
              return{
                  top: elem_top,
@@ -82,19 +81,37 @@ $(function(){
         console.log(i)
     }
  }());
+ let today = new Date();
+    hour = today.getHours(),
+    min = today.getMinutes(),
+    day = today.getDate(),
+    month = today.getMonth()+1;
+    year = today.getFullYear()
+    console.log(year);
  
-    booking_input.focus(function() {
-    $.mask.definitions['o']='[0-1]';
-    $.mask.definitions['t']='[0-3]';
-    booking_input.each(function(){
-        
+    if(today.getDate()<10){
+         day = `0${day}`;
+    } 
+    if(month<10){
+month = `0${month}`;
+    }
 
+    booking_input.each(function(){
+        if ($(this).attr('placeholder')==='Date (mm/dd)'){
+             console.log('ggg');
+            $(this).attr( 'min',`${year}-${month}-${day}`);
+            if((today.getMonth()+3)<10){
+                month = `0${today.getMonth()+3}`;
+                    } else month = today.getMonth()+3;
+               $(this).attr('max',`${year}-${ month}-${day}`)
+            }})
+
+      
+
+    booking_input.focus(function() {
+    booking_input.each(function(){
         if($(this).attr('placeholder')==='Phone'){
             $(this).mask("+375(99) 999-99-99");
-        } else if($(this).attr('placeholder') === 'Date (mm/dd)'){
-            $(this).mask("o9 / t9");
-        } else if($(this).attr('placeholder') === 'Time'){
-            $(this).mask("99 : 99");
         }
     })
 }
