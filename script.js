@@ -28,7 +28,8 @@ $(function(){
 
             if(pos(".block_aboutUs").top < scrollBottom && pos($(".block_aboutUs")).bottom >scrollTop) {
   
-                $('.block_aboutUs .flex_block').css('animation','slideUp 1.5s');
+                $('.block_aboutUs .flex_block').css({'animation':'slideUp 1.5s',
+            'display': 'flex'});
              
                } 
                 if(pos(".block_team .flex_block").top < scrollBottom && pos(".block_team .flex_block").bottom >scrollTop) {

@@ -338,6 +338,10 @@ h4 {
 }
 .block_aboutUs {
     padding: 10rem 0;
+    .flex_block{
+
+    
+    display: none;}
     .img {
         @include img(1);
     }
