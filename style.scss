@@ -196,7 +196,7 @@ h4 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
+    
 
     .header {
         display: flex;
@@ -232,6 +232,7 @@ h4 {
             left: calc(50% - 7.5rem);
         }
     }
+}
 
     &_rightLeft {
         display: flex;
@@ -865,11 +866,11 @@ z-index: 2;
 
 @media screen and (max-width: 660px) {
     .main_block{
-    
+    .wrapper{
      .header{
         animation: none;
        opacity: 0;
-    }
+    }}
     .business_hours {
         animation: business_hoursAd 1.3s;
     }}

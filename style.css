@@ -197,7 +197,7 @@ h4 {
           justify-content: space-between;
 }
 
-.main_block .header {
+.main_block .wrapper .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,7 +209,7 @@ h4 {
           animation: header 1.3s;
 }
 
-.main_block .header_ul {
+.main_block .wrapper .header_ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,7 +217,7 @@ h4 {
   border-bottom: 1px solid gray;
 }
 
-.main_block .header_ul li {
+.main_block .wrapper .header_ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,7 +231,7 @@ h4 {
   width: 25%;
 }
 
-.main_block .header_ul li a {
+.main_block .wrapper .header_ul li a {
   cursor: pointer;
   text-decoration: none;
   color: white;
@@ -239,11 +239,11 @@ h4 {
   transition: 0.3s;
 }
 
-.main_block .header_ul li a:hover {
+.main_block .wrapper .header_ul li a:hover {
   color: #a1a1a1;
 }
 
-.main_block .header svg {
+.main_block .wrapper .header svg {
   position: absolute;
   width: 15rem;
   height: 15rem;
@@ -1312,7 +1312,7 @@ iframe {
 }
 
 @media screen and (max-width: 660px) {
-  .main_block .header {
+  .main_block .wrapper .header {
     -webkit-animation: none;
             animation: none;
     opacity: 0;
