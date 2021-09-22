@@ -191,6 +191,7 @@ h4 {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    min-height: 600px;
     text-transform: uppercase;
     .wrapper {
         display: flex;
@@ -807,7 +808,7 @@ transition: 1s;
     position: absolute;
     left: -70vw;
     background-color: #1c1b1b;
-    height: 100vh;
+    height: 100%;
     width: 70%;
     transition: 1s;
 z-index: 2;
