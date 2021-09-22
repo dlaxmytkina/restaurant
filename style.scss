@@ -50,6 +50,10 @@
     }
 }
 
+b {
+    height: fit-content;
+}
+
 body,
 ul,
 h1,
@@ -157,9 +161,14 @@ h4 {
 }
 .p_bottom {
     @include centerFlex(10rem, fit-content);
+    flex-wrap: wrap;
     font-size: 1.2rem;
     margin: auto;
     color: #33333380;
+
+    @media screen and (max-width: 470px) {
+        flex-direction: column;
+    }
 }
 
 @mixin yellowButton {
@@ -256,7 +265,7 @@ h4 {
             }
         }
 
-        @media (max-width: 540px) {
+        @media screen and (max-width: 540px) {
             & {
                 flex-direction: column;
                 align-items: center;
@@ -337,13 +346,17 @@ h4 {
     }
 }
 
-.block_aboutUs,  .block_specialties, .block_privateEvents, .block_team{
-    .flex_block{
-        opacity: 0;}
+.block_aboutUs,
+.block_specialties,
+.block_privateEvents,
+.block_team {
+    .flex_block {
+        opacity: 0;
+    }
 }
 .block_aboutUs {
     padding: 10rem 0;
-   
+
     .img {
         @include img(1);
     }
@@ -364,8 +377,9 @@ h4 {
 
         p {
             text-align: center;
-            font-size: 1.3rem;
+            font-size: 1.6rem;
             line-height: 2.4rem;
+            font-family: serif;
         }
     }
 
@@ -459,7 +473,7 @@ h4 {
 .booking {
     padding: 10rem 0 0 0;
     font-family: "Open Sans normal";
-    .flex_block{
+    .flex_block {
         display: flex;
     }
     &_form_block {
@@ -477,7 +491,6 @@ h4 {
         @media (max-width: 550px) {
             & {
                 width: 100%;
-
             }
         }
 
@@ -512,18 +525,18 @@ h4 {
             .color-line {
                 margin: 1rem 0;
             }
-        
-        @media (max-width: 800px) {
-            & {
-                width: 70%;
+
+            @media (max-width: 800px) {
+                & {
+                    width: 70%;
+                }
+            }
+            @media (max-width: 520px) {
+                & {
+                    width: 90%;
+                }
             }
         }
-        @media (max-width: 520px) {
-            & {
-                width: 90%;
-            }
-        }
-    }
         &_sections {
             display: flex;
             margin: 5rem 0;
@@ -550,9 +563,7 @@ h4 {
                         width: calc(100% / 7);
                     }
                 }
-               
             }
-            
         }
         &_positions {
             display: flex;
@@ -636,7 +647,7 @@ h4 {
         & {
             flex-wrap: wrap;
         }
-        img{
+        img {
             width: 50%;
         }
     }
@@ -679,6 +690,12 @@ h4 {
         }
         h4 {
             width: 50%;
+            @media screen and (max-width: 850px) {
+                width: 70%;
+            }
+            @media screen and (max-width: 490px) {
+                width: 90%;
+            }
         }
         form {
             margin-top: 5rem;
@@ -692,6 +709,13 @@ h4 {
             justify-content: space-between;
             input {
                 width: calc((100% - 2rem) / 3 - 3%);
+            }
+
+            @media screen and (max-width: 470px) {
+                flex-direction: column;
+                input {
+                    width: 97%;
+                }
             }
         }
         fieldset:nth-child(2) {
@@ -721,6 +745,141 @@ footer {
 iframe {
     height: 50rem;
     width: 100%;
+}
+.menu_open_icon{
+    transform: translateX(64vw);
+    
+    transition: 1s;
+}
+
+
+
+.menu_icon {
+    position: absolute;
+    top: 6rem;
+    width: 5rem;
+    height: 4rem;
+    z-index: 1000;
+    display: none;
+    margin-left: 6rem;
+    left: 0;
+
+transition: 1s;
+    flex-direction: column;
+    justify-content: space-between;
+    div {
+        width: 100%;
+        height: 2px;
+        background: white;
+    }
+}
+
+
+
+
+.dark {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    backdrop-filter: blur(8px);
+    
+}
+
+
+.header_adaptive {
+    display: none;
+    position: absolute;
+    left: -70vw;
+    background-color: #1c1b1b;
+    height: 100%;
+    width: 70%;
+    transition: 1s;
+z-index: 2;
+    ul {
+        margin: 0 10%;
+        
+
+        li {
+            border-bottom: 1px solid gray;
+            padding: 3vh;
+            text-align: center;
+            font-size: 2rem;
+            position: relative;
+            a {
+                position: relative;
+                z-index: 2;
+                transition: 0.5s;
+            }
+            &:hover {
+                &::before {
+                    visibility: visible;
+                    transform: scaleY(1);
+                }
+                a {
+                    color: black;
+                }
+            }
+
+            &:before {
+                content: ""; /* Выводим текст */
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background: rgb(28, 27, 27);
+                background: linear-gradient(
+                    90deg,
+                    rgba(28, 27, 27, 1) 0%,
+                    rgba(96, 87, 35, 1) 23%,
+                    rgba(232, 195, 0, 1) 50%,
+                    rgba(100, 90, 36, 1) 75%,
+                    rgba(28, 27, 27, 1) 100%
+                );
+                visibility: hidden;
+                transform: scaleY(0);
+                transition: all 0.3s ease-in-out 0s;
+            }
+        }
+    }
+    svg {
+        width: 16rem;
+        margin:  3vh calc(50% - 8rem);
+    }
+}
+
+
+.menu_open{
+    transition: 1s;
+    transform: translateX(70vw);
+    
+}
+
+
+
+
+@media screen and (max-width: 660px) {
+    .main_block{
+    
+     .header{
+        animation: none;
+       opacity: 0;
+    }
+    .business_hours {
+        animation: business_hoursAd 1.3s;
+    }}
+    .header_adaptive{
+        display: block;
+    }
+    .menu_icon{
+        display: flex;
+    }
+
 }
 
 @keyframes header {
@@ -791,6 +950,20 @@ iframe {
         transform: rotate(180deg) translateX(0);
     }
 }
+@keyframes business_hoursAd {
+    0% {
+        transform: translateX(-20vh);
+
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        transform:  translateX(0);
+    }
+}
+
 
 @keyframes slideUp {
     0% {

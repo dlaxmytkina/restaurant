@@ -1,8 +1,14 @@
-$(function () {
+$(function () { 
+     let scrollTop = $(window).scrollTop();
     let scrollBottom = $(window).scrollTop() + $(window).height() - 1;
-    let scrollTop = $(window).scrollTop();
+  
 scrollAnimate(scrollBottom, scrollTop);
-
+$('.menu_icon ').click(function(){
+    $('.dark').toggle();
+    $('.menu_icon').toggleClass('menu_open_icon');
+    $('.header_adaptive').toggleClass('menu_open');
+   
+})
 
     $('a').click(function (e) {
 
@@ -23,8 +29,9 @@ scrollAnimate(scrollBottom, scrollTop);
     }
 
     $(window).scroll(function(){
+        scrollTop = $(window).scrollTop();
         scrollBottom = $(window).scrollTop() + $(window).height() - 1;
-         scrollTop = $(window).scrollTop();
+         
          scrollAnimate(scrollBottom, scrollTop);
     })
 
