@@ -209,6 +209,14 @@ h4 {
           animation: header 1.3s;
 }
 
+@media screen and (max-width: 660px) {
+  .main_block .wrapper .header {
+    -webkit-animation: none;
+            animation: none;
+    opacity: 0;
+  }
+}
+
 .main_block .wrapper .header_ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,6 +285,13 @@ h4 {
           transform: rotate(180deg);
   -webkit-animation: business_hours 1.3s;
           animation: business_hours 1.3s;
+}
+
+@media screen and (max-width: 660px) {
+  .main_block_rightLeft .business_hours {
+    -webkit-animation: business_hoursAd 1.3s;
+            animation: business_hoursAd 1.3s;
+  }
 }
 
 .main_block_rightLeft .contacts {

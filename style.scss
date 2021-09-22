@@ -204,7 +204,12 @@ h4 {
         justify-content: space-between;
 
         animation: header 1.3s;
-
+        @media screen and (max-width: 660px) {
+           &{
+                animation: none;
+               opacity: 0;
+            }}
+            
         &_ul {
             display: flex;
             width: 40%;
@@ -249,6 +254,12 @@ h4 {
             writing-mode: vertical-rl;
             transform: rotate(180deg);
             animation: business_hours 1.3s;
+
+            @media screen and (max-width: 660px) {
+                
+                & {
+                     animation: business_hoursAd 1.3s;
+                 }}
         }
         .contacts {
             display: flex;
