@@ -1,0 +1,635 @@
+{
+    "DRINKS": {
+        "Iced rose & Lychee latte": {
+            "caption": "Delicate rose syrup, fresh milk and lychee, expertly blended and shaken with crushed ice. Your new favourite!",
+            "price": "3,15",
+            "img": "img/drinks/ICED_ROSE&LYCHEE_LATTE.jpg"
+        },
+        "Spanish latte": {
+            "caption": "Our spin on a Spanish Iced Latte. Espresso ice cubes, steamed milk and sweet condensed milk are combined to deliver a decadent coffee-based beverage like no other",
+            "price": "3,75",
+            "img": "img/drinks/SPANISH_LATTE.jpg"
+        },
+        "Affogato": {
+            "caption": "A classic Italian favourite that combines the taste of Italy and Madagascar. Two shots of Arabica espresso, served over a scoop of our finest Italian Madagascan vanilla gelato.",
+            "price": "3,85",
+            "img": "img/drinks/AFFOGATO.jpg"
+        },
+        "English breakfast tea": {
+            "caption": "A full-bodied version of a well-loved classic, offering a delicate balance of strength and flavour with an intrinsic smoothness, eliminating the bitterness that can occur in regular blends.",
+            "price": "2,25",
+            "img": "img/drinks/ENGLISH_BREAKFAST_TEA.jpg"
+        },
+        "Praline & Cream hot chocolate": {
+            "caption": "Rich cocoa and praline syrup are steamed together with fresh milk. Finished with whipped cream & caramlised hazelnuts.",
+            "price": "3,50",
+            "img": "img/drinks/PRALINE&CREAM_HOT_CHOCOLATE.jpg"
+        },
+        "Perfect rose flowering tea": {
+            "caption": "This blooming green tea is made from the highest grade of special green tea of fresh spring crops, jasmine flowers, rose bud and marigold. It is handmade in China by skilled artisans to produce a delicately aromatic, flavoursome cup of tea. ",
+            "price": "5,00",
+            "img": "img/drinks/PERFECT_ROSE_FLOWERING_TEA.jpg"
+        },
+        "Rose lemonade": {
+            "caption": "Fragrant rose syrup is shaken with crushed ice to create a unique and intense beverage. Served long with sparkling water and finished with dried rose petals",
+            "price": "3,60",
+            "img": "img/drinks/ROSE_LEMONADE.jpg"
+        },
+        "Blood orange lemonade": {
+            "caption": "A tantalising blend of lemon and blood orange syrup, shaken and served over ice for a cool & refreshing twist on a classic beverage.",
+            "price": "3,45",
+            "img": "img/drinks/BLOOD_ORANGE_LEMONADE.jpg"
+        },
+        "Classic mint mojito": {
+            "caption": "Our invigorating take on this all-time favourite. Fresh, aromatic mint and zesty lime are shaken, served over ice and topped with sparkling water to create this classic Mojito.",
+            "price": "3,75",
+            "img": "img/drinks/CLASSIC_MINT_MOJITO.jpg"
+        },
+        "Mango & Passion fruit smoothie": {
+            "caption": "We've paired two tropical fruit classics for a refreshongly sweet and tangy taste. Made with real fruit and ice blended for the ultimate thrist quencher.",
+            "price": "3,90",
+            "img": "img/drinks/MANGO.jpg"
+        },
+        "Strawberry & Lime smoothie": {
+            "caption": "Made with real strawberry puree, blended with a dash of zesty lime and ice, giving you the perfect balance of sharp and sweet - the perfect accompaniment to any dessert",
+            "price": "3,90",
+            "img": "img/drinks/STRAWBERRY&LIMESMOOTHIE.jpg"
+        },
+        "Iced cafe latte": {
+            "caption": "The perfect cooldown! Two shots of 100% Arabica espresso are served over ice with a swirl of refreshingly cool whole milk",
+            "price": "2,40",
+            "img": "img/drinks/ICED_CAFE_LATTE.jpg"
+        },
+        "Luxury cafe mocha": {
+            "caption": "Espresso, rich hot chocolate and a Flake®.",
+            "price": "2,85",
+            "img": "img/drinks/LUXURY_CAFE_MOCHA.jpg"
+        },
+        "Belgian chocolate": {
+            "caption": "Cool, rich and indulgent, this classic milkshake is made with rich Belgian milk chocolate blended perfectly with smooth, velvety Belgian chocolate and vanilla ice cream. Topped with flake shavings, this is an all-time favourite.",
+            "price": "4,90",
+            "img": "img/drinks/BELGIAN_CHOCOLATE.jpg"
+        },
+        "Strawberrylicious": {
+            "caption": "The ultimate, classic milkshake, made with generous scoops of Strawberries and Cream and Vanilla ice cream",
+            "price": "4,90",
+            "img": "img/drinks/STRAWBERRYLICIOUS.jpg"
+        },
+        "Mint chocolate chip": {
+            "caption": "Refreshing, indulgent and pleasurable. Scoops of mint chocolate chip gelato and vanilla ice cream are blended with chilled milk to bring you a supreme tasting beverage. A true classic!",
+            "price": "4,90",
+            "img": "img/drinks/MINT_CHOCOLATE_CHIP.jpg"
+        },
+        "Chai milkshake": {
+            "caption": "Warm chai spices and scoops of cool vanilla ice cream infuse to create this indulgent milkshake. This has become one of our most popular milkshakes over the years.",
+            "price": "4,90",
+            "img": "img/drinks/CHAI_MILKSHAKE.jpg"
+        },
+        "Cookie blast": {
+            "caption": "Our signature cookie blast milkshake is a creamy hand spun classic. Scoops of tasty Cookies and Cream gelato are whizzed to perfection then drizzled with chocolate sauce and topped with peaks of thick, freshly whipped cream. A timeless recipe and the result of years of cookie passion.",
+            "price": "4,90",
+            "img": "img/drinks/COOKIE_BLAST.jpg"
+        }
+    },
+    "DESSERT": {
+        "Banoffee": {
+            "caption": "A sophisticated and delicious Banoffee style treat. Heaped with fresh bananas and drizzled with smooth toffee sauce. This classic treat is served with a scoop of cool Banana gelato.",
+            "price": "7,10",
+            "img": "img/dessert/BANOFFEE.jpg"
+        },
+        "Rose cheesecake": {
+            "caption": "Delicate & fragrant - our Signature Rose Cheesecake is served with a refreshing raspberry sorbet, finished with dried raspberries & rose petals.",
+            "price": "6,25",
+            "img": "img/dessert/ROSE_CHEESECAKE.jpg"
+        },
+        "Nutella cheesecake": {
+            "caption": "Indulgent vanilla flavoured cream cheese, set on an all butter biscuit base, finished with Nutella® and caramelised hazelnuts. The perfect cheesecake for Nutella® lovers! Perfected with a scoop of Heavenly Hazelnut gelato.",
+            "price": "6,70",
+            "img": "img/dessert/NUTELLA_CHEESECAKE.jpg"
+        },
+        "Red velvet cheesecake": {
+            "caption": "Our superb layered Red Velvet cheesecake has a sweet, vanilla-flavoured base that is the perfect complement to lashings of rich strawberry sauce and luxuriously decadent Strawberries and Cream gelato.",
+            "price": "6,50",
+            "img": "img/dessert/RED_VELVET_CHEESECAKE.jpg"
+        },
+        "Madagascan vanilla cheesecake": {
+            "caption": "There’s vanilla cheesecake, and then there’s our luxurious creamy Madagascan Vanilla cheesecake. From the crisp biscuit base to the rich, silky, creamy filling, the sensual aroma and flavour of vanilla and contrasting textures will captivate you. Served with a scoop of the finest Madagascan Vanilla gelato to heighten your experience.",
+            "price": "5,90",
+            "img": "img/dessert/MADAGASCAN_VANILLA_CHEESECAKE.jpg"
+        },
+        "Strawberry & White chocolate tart": {
+            "caption": "A Swiss butter pastry case, filled with indulgent white chocolate custard and fresh strawberries, showered with Belgian white chocolate shavings.",
+            "price": "5,50",
+            "img": "img/dessert/STRAWBERRY&WHITE_CHOCOLATE_TART.jpg"
+        },
+        "Tiramisu torte": {
+            "caption": "An Italian classic, perfected by Heavenly Desserts. Layers of espresso-soaked sponge and vanilla mascarpone, topped with shavings of our finest Belgian chocolate. Served with smooth nougat gelato.",
+            "price": "6,45",
+            "img": "img/dessert/TIRAMISU_TORTE.jpg"
+        },
+        "Blackcurrant crumble": {
+            "caption": "A sundae style dessert that is just made for your inner milk and cookies kid. Two generous scoop soft Cookies and Cream gelato are blended with chunks of crumbly chocolate chip cookies, drizzled with Belgian chocolate sauce and finished with Oreo® piecesSticky blackcurrant jam is sandwiched between a shortcake base and crunchy oaty crumble, served with our warm custard to add the perfect finishing touch.",
+            "price": "4,70",
+            "img": "img/dessert/BLACKCURRANT_CRUMBLE.jpg"
+        },
+        "Profiteroles": {
+            "caption": "A strong contender as one of the nations most popular desserts, soft choux pastry balls are filled with a fresh cream filling and drizzled in our heavenly Belgian milk chocolate sauce. We pair a smooth and silky scoop of Madagascan Vanilla gelato to make the perfect taste CAKE combination.",
+            "price": "5,60",
+            "img": "img/dessert/PROFITEROLES.jpg"
+        },
+        "Cookies & Cream cheesecake": {
+            "caption": "Creamy and chocolaty, our vanilla cheesecake is paired with chocolate sauce and finished with crunched Oreo® biscuits for the ultimate Cookies & Cream pleasure. Perfected with a scoop of Cookies & Cream gelato.",
+            "price": "6,25",
+            "img": "img/dessert/COOKIES&CREAM_CHEESECAKE.jpg"
+        },
+        "Cornflake tart": {
+            "caption": "A heavenly twist on an old school classic, our homemade Cornflake Tart brings together toasted cornflakes, golden syrup and strawberry jam in a Swiss butter pastry case, served with lashings of warm custard.",
+            "price": "5,45",
+            "img": "img/dessert/CORNFLAKE_TART.jpg"
+        },
+        "Perfect dream": {
+            "caption": "Comfort your senses with this indulgent combination, luscious strawberries are served with our finest Belgian milk chocolate sauce for you to dip and enjoy",
+            "price": "4,70",
+            "img": "img/dessert/PERFECT_DREAM.jpg"
+        },
+        "Heavenly desserts cookie dough": {
+            "caption": "When you can’t make up your mind, go for both! Half chocolate chip cookie dough and half white chocolate chip cookie dough makes this soft, freshly baked dessert irresistible. Served with creamy Madagascan Vanilla gelato and warm Belgian milk and white chocolate sauces, garnished beautifully with juicy strawberries.",
+            "price": "7,20",
+            "img": "img/dessert/HEAVENLY_DESSERTS_COOKIE_DOUGH.jpg"
+        },
+        "Raspberry & White chocolate chip cookie dough": {
+            "caption": "Indulgent Belgian white chocolate chip cookie dough, infused with jewel-like pockets of fresh raspberries and oven-baked to rich, warm perfection. Beautifully presented with a scoop of cool, creamy white chocolate gelato and warm Belgian white chocolate sauce for a magnificent flavour sensation.",
+            "price": "7,30",
+            "img": "img/dessert/RASPBERRY&WHITE_CHOCOLATE_CHIP_COOKIE_DOUGH.jpg"
+        },
+        "Sundae royale": {
+            "caption": "A firm favourite with Ferrero® fans, this signature Heavenly Desserts sundae takes scoops of Heavenly Hazelnut and Hazelnut Supreme gelato, three Ferrero Rocher® chocolates and showers them generously with an inspired blend of nuts, crumbly cone pieces and warm, velvety Nutella® sauce.",
+            "price": "6,00",
+            "img": "img/dessert/SUNDAE_ROYALE.jpg"
+        },
+        "Mochi": {
+            "caption": "Mochi is a rice flour dough that has been steamed and pounded to give it a distinctive soft and chewy texture. A thin layer is wrapped around authentic gelato to retain it's unique ball shape. It is so unique that in Asia the distinctive glutinous texture of Mochi has it's own name, and is referred to as the 'Q' texture",
+            "price": "4,50",
+            "img": "img/dessert/MOCHI.jpg",
+            "select": {
+                "Honey roasted pistachio (3 pieces)": "4,50",
+                "Salted caramel (3 pieces)": "6,00",
+                "Alphonso mango (3 pieces)": "4,50",
+                "Sumatran cocount (3 pieces)": "4,50"
+            }
+        },
+        "Kunafah": {
+            "caption": "Shredded filo pastry wrapped around soft curd cheese, baked to perfection and finished with a sweet syrup. We serve this exotic treat with nougat gelato and crushed pistachios",
+            "price": "6,25",
+            "img": "img/dessert/KUNAFAH.jpg"
+        },
+        "White kiss": {
+            "caption": "A stylish dessert that promises pure luxury and enjoyment in every bite. Exquisitely warm Belgian white chocolate sauce, a scoop of indulgent Stracciatella gelato and a scattering of white chocolate shavings, creates the perfect balance of sweetness and intensity.",
+            "price": "6,70",
+            "img": "img/dessert/WHITE_KISS.jpg",
+            "select": {
+                "American Waffle": "6,70",
+                "Belgian Waffle": "6,00",
+                "Crêpe": "6,10"
+            }
+        },
+        "Secret sensations": {
+            "caption": "A seductive taste sensation created with passion by our skilled artisans. We take ripe, crimson raspberries, a scoop of velvety white chocolate gelato and add a drizzle of warm Belgian white chocolate and silky for a combination of flavours to linger over",
+            "price": "7,00",
+            "img": "img/dessert/SECRET_SENSATIONS.jpg",
+            "select": {
+                "American Waffle": "7,50",
+                "Belgian Waffle": "6,80",
+                "Crêpe": "7,00"
+            }
+        },
+        "Milk cake": {
+            "caption": "Rumoured to originate from Mexico in the early 1900's, our 'three milk' cake, also known as torta de tres leches or tres leche cake. Our milk cake collection features soft, light sponge soaked in delicately flavoured three milk syrup.",
+            "price": "6,75",
+            "img": "img/dessert/MILK_CAKE.jpg",
+            "select": {
+                "Vanilla with rose & pistachios": "6,25",
+                "Lotus Biscoff®": "6,50",
+                "Saffron": "6,75"
+            }
+        },
+        "Tarte au citron": {
+            "caption": "Fresh and zesty lemons flavour the creamy filling in our Tarte Au Citron. Finished with crumbled meringue and fresh raspberries, topped with passionfruit sorbet. ",
+            "price": "6,25",
+            "img": "img/dessert/TARTE_AU_CITRON.jpg"
+        }
+    },
+    "WINE": {
+        "Glover Family Vineyards – Pinot Noir 19′": {
+            "caption": "Glover’s Pinot Noir (vintage 2019) has a bright, brambly hue with aromas of wild berries, cherries, raspberry, and a hint of green spice. These notes overflow onto the palate with a burst of fruit and elegance to finish.",
+            "price": "25,20",
+            "img": "img/WINE/Glover_Family_Vineyards–Pinot_Noir19′.png"
+        },
+        "Glover Family Vineyards – Sauvignon Blanc 20′": {
+            "caption": "Glovers Sauvignon Blanc (vintage 2020) is pale with lashings of tropical passion fruit, guava and mandarin which leap from the glass. A crisp, dry and acidic finish will ensure you are smiling from ear to ear.",
+            "price": "23,25",
+            "img": "img/WINE/Glover_Family_Vineyards–Sauvignon_Blanc20′.png"
+        },
+        "Vinicola Real – Vina Los Valles Rioja Tempranillo 19′": {
+            "caption": "Vina Los Valles is a certified organic red wine made from 100% Tempranillo grapes from vines which are more than 50 years old. After initial fermentation in steel tanks the wine was transferred to French and American oak barrels as part of a 6 month ageing process which gives the wine some body and soft tannins. Expect cherry, hints of fig and spices.",
+            "price": "18,80",
+            "img": "img/WINE/VinicolaReal–VinaLosVallesRiojaTempranillo19′.png"
+        },
+        "Charles Frey – Crémant d’Alsace Brut Nature 18′": {
+            "caption": "Charles Frey Cremant D’Alsace Brut Nature is a blend of Pinot Blanc, Auxerrois and Riesling which are all typical white grapes grown in the Alsace wine region. The sparkling Crémant wine is very dry and has good acidity. On the nose you will note white flowers and citrus fruits. The fine flowing bubbles keep the wine crisp and sharp, pairing well with fresh pastries, salmon blini’s and soft cheese.",
+            "price": "23,0",
+            "img": "img/WINE/CharlesFrey–Crémantd’AlsaceBrutNature18′.png"
+        },
+        "Oxney Estate – NV": {
+            "caption": "Oxney Estate Non-Vintage (NV) sparkling wine is a benchmark English sparkling wine. The sparkling English wine is made from a blend of Chardonnay, Pinot Noir, Pinot Meunier and Seyval Blanc. Notes of red apples, pear and toast are carried on a thread of beautifully crisp acidity. It is a dry style sparkling wine which is both refreshing and precise. Very food-friendly and equally delicious on its own.",
+            "price": "30,90",
+            "img": "img/WINE/OxneyEstate–NVSparklingBrut.png"
+        },
+        "Trevibban Mill – Pink": {
+            "caption": "Trevibban Mill pink sparkling brut is made from 100% Dornfelder grapes and is a fine example of the quality English sparkling wine being produced today. The wine is a 2019 vintage which was very dry and warm. Once in your glass you will experience notes of raspberry, cherry and hints of strawberry. In the mouth you will discover nice acidity and fresh red fruits.",
+            "price": "38,45",
+            "img": "img/WINE/TrevibbanMill–PinkSparklingBrut.png"
+        },
+        "Chateau Picoron – Saint Colombe 15′": {
+            "caption": "Chateau Picoron Saint Colombe 15′ has a purple colour with a hint of ruby. It is full bodied with lots of bold red and black fruit along with hints of vanilla, truffle and spice on the nose. Expect a perfect balance of blackberry, plum and strawberry. It is accompanied by well structured, rich tannins which have been further softened by the 16 months the wine has spent in French oak and a further 3 in the bottle. In the mouth you will experience lovely peppery undertones which keep it lingering on and on. This is a 100% Merlot and considered a very high quality red wine with ageing potential to 203o. This is one of my favourite red wines for 2020.",
+            "price": "29,50",
+            "img": "img/WINE/ChateauPicoron–SaintColombe15′.png"
+        },
+        "Camel Valley – Cornwall Brut Reserve": {
+            "caption": "Camel Valley Cornwall Brut is a fresh and traditional sparkling wine made from a combination of 50% Seyval Blanc, 35% Chardonnay and 15% Pinot Noir grapes. It is full of citrus fruit on the pallet and hints of English flora on the nose. There is also a good balance of acidity and an event so slight hint of honey as it vanishes from your glass.",
+            "price": "36,00",
+            "img": "img/WINE/CamelValley–CornwallBrutReserveSparklingWine.png"
+        },
+        "Weingut Gsellmann – Chardonnay 18′": {
+            "caption": "Chardonnay is complex and has good depth. Expect a wine with a nice bouquet of lemon, white peach and hints of apricot. It will have a full mouth feel and pair well with roasted chicken, pork and a variety of hard cheeses.",
+            "price": "17,70",
+            "img": "img/WINE/WeingutGsellmann–Chardonnay18′.png"
+        },
+        "Harrow & Hope – Rose Brut 17′": {
+            "caption": "Harrow and Hope‘s Rose Brut has been created from all three Champagne grape varieties, led by the pure fruit and texture of Pinot Noir & Pinot Meunier which is well supported by the finesse of Chardonnay. On the nose you will note a delicate combination of strawberry, raspberry and citrus fruit. Expect a nice creamy mouthfeel, fine bubbles and snappy acidity to keep you coming back for more. Enjoy!",
+            "price": "38,60",
+            "img": "img/WINE/Harrow&Hope–RoseBrut17′.png"
+        },
+        "Susana Balbo – Crios Rose": {
+            "caption": "Susana Balbo Crios Rosé is made from high quality malbec grapes and is a extremely well made. Expect a delicious combination of light summer red fruits, including strawberry, red cherry and cream. The wine is a lovely pink colour owing to the short time the skins will left in contact with the wine. This is the perfect wine for summer and will work well with grilled white meat and fish.",
+            "price": "18,05",
+            "img": "img/WINE/SusanaBalbo–CriosRose.png"
+        },
+        "Di Giovanna – Gerbino Bianco IGP 20’": {
+            "caption": "Gerbino Bianco recalls the Sicilian summer, with its enticing bright yellow reflections. From the first aromas the wine recalls Mediterranean herbs and citrus, melon and hints of honey. Expressive and full of contrasts between fruity and savory notes.",
+            "price": "16,10",
+            "img": "img/WINE/DiGiovanna–GerbinoBiancoIGP20’.png"
+        },
+        "Feth – Sparkling Riesling Brut": {
+            "caption": "Brut made from a single vineyard or plot of high quality vines. The Riesling is a sparkling dry bio-dynamic white wine with an excellent balance of citrus and stone fruit with lovely acidity and fine bubbles. On the nose it is delightful with hints of green apple, white peach and apricot.",
+            "price": "24,35",
+            "img": "img/WINE/Feth–SparklingRieslingBrut.png"
+        },
+        "La Roulerie – Petit Chenin 19′": {
+            "caption": "Expect lots of citrus fruit along with a slight hint of sweet honeydew to finish. Very dry, crisp and well balanced acidity.",
+            "price": "13,90",
+            "img": "img/WINE/LaRoulerie–PetitChenin19′.png"
+        },
+        "Mario Giribaldi – Barolo 15′": {
+            "caption": "Made from 100% organic nebbiolo grapes from the Giribaldi’s vineyard located in Novello, northern Italy. Expect a well balanced combination of red fruits, spice and delicate tannin. A very elegant red wine. The vintage is 2015.",
+            "price": "28,00",
+            "img": "img/WINE/MarioGiribaldi–Barolo15′.png"
+        }
+    },
+    "PIZZA": {
+        "BBQ meats deluxe": {
+            "caption": "Smokey Aussie beef brisket, paired with tender Peking duck, seasoned chicken, pepperoni & sliced red onion, all on a BBQ sauce base, topped with Hickory BBQ sauce & rocket garnish.",
+            "price": "15,90",
+            "img": "img/PIZZA/BBQMEATSDELUXE.png",
+            "select": {
+                "Small": "15,90",
+                "Medium": "17,90",
+                "Large": "19,90"
+            }
+        },
+        "Salmon & Prawn supreme": {
+            "caption": "Hot smoked Tasmanian pepper salmon, juicy prawns, roasted pumpkin & sliced red onion, all on a crème fraiche base, seasoned with parmesan & herb sprinkle & finished with a drizzle of hollandaise & spring onions.",
+            "price": "17,90",
+            "img": "img/PIZZA/SALMON&PRAWNSUPREME.png",
+            "select": {
+                "Small": "17,90",
+                "Medium": "19,90",
+                "Large": "21,90"
+            }
+        },
+        "Chicken & Parmesan": {
+            "caption": "Seasoned chicken, roasted pumpkin, Hastings Valley Parmesan, olives, baby spinach, sliced red onion & mushrooms, topped with a drizzle of garlic parmesan aioli & rocket garnish.",
+            "price": "16,90",
+            "img": "img/PIZZA/CHICKEN&PARMESAN.png",
+            "select": {
+                "Small": "16,90",
+                "Medium": "18,90",
+                "Large": "20,90"
+            }
+        },
+        "Low & Slow bbq brisket": {
+            "caption": "Smokey beef brisket cooked low & slow, Tasmanian vintage cheddar, crispy rasher bacon, diced tomato & red onion, all on a BBQ & garlic sauce base.",
+            "price": "18,90",
+            "img": "img/PIZZA/LOW&SLOWBBQBRISKET.png",
+            "select": {
+                "Small": "18,90",
+                "Medium": "21,90",
+                "Large": "24,90"
+            }
+        },
+        "Roasted vegetable deluxe": {
+            "caption": "Roasted pumpkin, shaved broccoli, cherry tomatoes, sliced red onion, mushroom, crumbled feta & diced paneer cheese, topped with a drizzle of garlic parmesan aioli & rocket garnish.",
+            "price": "20,90",
+            "img": "img/PIZZA/ROASTEDVEGETABLEDELUXE.png",
+            "select": {
+                "Small": "20,90",
+                "Medium": "23,90",
+                "Large": "26,90"
+            }
+        },
+        "Crispy BBQ peking duck & Bacon": {
+            "caption": "Generously topped with delicious BBQ Peking duck, crispy rasher bacon, slices of red onion & capsicum, prepared on a BBQ sauce base & garnished with spring onions.",
+            "price": "17,90",
+            "img": "img/PIZZA/CRISPYBBQPEKINGDUCK&BACON.png",
+            "select": {
+                "Small": "17,90",
+                "Medium": "19,90",
+                "Large": "21,90"
+            }
+        },
+        "Garlic chicken & Bacon aioli": {
+            "caption": "Succulent chicken, crispy rasher bacon, spinach & red onion, served on a zesty garlic & pizza sauce base, topped with a Garlic Parmesan Aioli.",
+            "price": "19,80",
+            "img": "img/PIZZA/GARLICCHICKEN&BACONAIOLI.png",
+            "select": {
+                "Small": "19,80",
+                "Medium": "21,80",
+                "Large": "23,80"
+            }
+        },
+        "Vegetarian plant-based godfather": {
+            "caption": "Plant-based beef, vibrant capsicum, diced tomato & Kalamata olives, finished with creamy garlic sauce & oregano.",
+            "price": "18,70",
+            "img": "img/PIZZA/VEGETARIANPLANT-BASEDGODFATHER.png",
+            "select": {
+                "Small": "16,70",
+                "Medium": "18,70",
+                "Large": "20,70"
+            }
+        },
+        "Indi chicken tikka": {
+            "caption": "Seasoned chicken, diced paneer cheese, capsicum, diced tomato & red onion, all on a tikka sauce base, sprinkled with chilli flakes and spring onions.",
+            "price": "16,50",
+            "img": "img/PIZZA/INDICHICKENTIKKA.png",
+            "select": {
+                "Small": "16,50",
+                "Medium": "18,50",
+                "Large": "20,50"
+            }
+        },
+        "Fire breather": {
+            "caption": "Pepperoni, smokey leg ham, seasoned ground beef, fiery jalapenos, tomato & sliced red onion with a spicy hit of chilli flakes.",
+            "price": "15,90",
+            "img": "img/PIZZA/FIREBREATHER.png",
+            "select": {
+                "Small": "15,90",
+                "Medium": "17,90",
+                "Large": "19,90"
+            }
+        },
+        "Godfather": {
+            "caption": "Pepperoni paired with Italian sausage, fresh capsicum, diced tomato & Kalamata olives, finished with creamy garlic sauce & oregano",
+            "price": "15,90",
+            "img": "img/PIZZA/GODFATHER.png",
+            "select": {
+                "Small": "15,90",
+                "Medium": "18,90",
+                "Large": "21,90"
+            }
+        },
+        "Mega meatlovers": {
+            "caption": "Mega loaded, mega tasty. Featuring seasoned chicken, smokey leg ham, crumbled beef, pepperoni slices, Italian sausage & crispy rasher bacon, brought together with a Hickory BBQ sauce.",
+            "price": "20,30",
+            "img": "img/PIZZA/MEGAMEATLOVERS.png",
+            "select": {
+                "Small": "20,30",
+                "Medium": "22,30",
+                "Large": "24,30"
+            }
+        },
+        "Smoked salmon, parmesan & Rocket": {
+            "caption": "Hot smoked Tasmanian pepper salmon, shaved broccoli, Hastings Valley parmesan, cherry tomatoes & sliced red onion on a garlic sauce base, finished with a drizzle of tomato & capsicum sauce & rocket garnish.",
+            "price": "16,80",
+            "img": "img/PIZZA/SMOKEDSALMONPARMESAN&ROCKET.png",
+            "select": {
+                "Small": "16,80",
+                "Medium": "19,80",
+                "Large": "22,80"
+            }
+        },
+        "Simply cheese": {
+            "caption": "Simply topped with lots of melted mozzarella goodness.",
+            "price": "14,40",
+            "img": "img/PIZZA/SIMPLYCHEESE.png",
+            "select": {
+                "Small": "14,40",
+                "Medium": "16,40",
+                "Large": "18,40"
+            }
+        },
+        "Pepperoni": {
+            "caption": "Slices of crispy pepperoni & creamy mozzarella.",
+            "price": "16,70",
+            "img": "img/PIZZA/PEPPERONI.png",
+            "select": {
+                "Small": "16,70",
+                "Medium": "18,70",
+                "Large": "19,70"
+            }
+        },
+        "Supreme": {
+            "caption": "Crispy rasher bacon, pepperoni & Italian sausage, topped with fresh mushrooms, capsicum, crumbled beef & juicy pineapple, finished with vibrant spring onions & oregano.",
+            "price": "17,10",
+            "img": "img/PIZZA/SUPREME.png",
+            "select": {
+                "Small": "17,10",
+                "Medium": "19,10",
+                "Large": "21,10"
+            }
+        },
+        "Avocado veg": {
+            "caption": "Slices of avocado, kalamata olives, diced tomato, mushrooms, red onion & vibrant capsicum, topped with spring onions.",
+            "price": "17,20",
+            "img": "img/PIZZA/AVOCADOVEG.png",
+            "select": {
+                "Small": "17,20",
+                "Medium": "19,20",
+                "Large": "21,20"
+            }
+        },
+        "Spicy peppy paneer": {
+            "caption": "Diced paneer cheese, cherry tomatoes, sliced red onion, capsicum & spicy jalapenos on a tikka sauce base, drizzled with peri peri sauce.",
+            "price": "19,40",
+            "img": "img/PIZZA/SPICYPEPPYPANEER.png",
+            "select": {
+                "Small": "19,40",
+                "Medium": "21,40",
+                "Large": "23,40"
+            }
+        }
+    },
+    "PASTA": {
+        "Masala Pasta Recipe": {
+            "caption": "Spicy Masala Pasta using tomatoes and peas.",
+            "price": "12,70",
+            "img": "img/pasta/MasalaPastaRecipe.jpg"
+        },
+        "Spaghetti al Pomodoro Crudo": {
+            "caption": "Spaghetti With No-Cook Raw Tomato Sauce",
+            "price": "12,60",
+            "img": "img/pasta/SpaghettialPomodoroCrudo.jpg"
+        },
+        "Linguine With Zucchini, Tomato, and Crab": {
+            "caption": "This pasta is packed with tender zucchini, plump burst tomatoes, and a decadent touch of fresh crabmeat.",
+            "price": "14,90",
+            "img": "img/pasta/LinguineWithZucchiniTomatoandCrab.jpg"
+        },
+        "Penne Alla Vodka": {
+            "caption": "Tender penne pasta is tossed with a creamy and vibrant, San Marzano tomato based and vodka infused sauce that’s seasoned with fresh herbs and parmesan.",
+            "price": "15,65",
+            "img": "img/pasta/PenneAllaVodka.jpg"
+        },
+        "Pasta Puttanesca": {
+            "caption": "Spaghetti is also a favorite with its savory condiments: peeled tomatoes, Gaeta olives, capers, and anchovy fillets give these spaghetti a unique taste.",
+            "price": "13,90",
+            "img": "img/pasta/PastaPuttanesca.jpg"
+        },
+        "Italian Pasta Salad": {
+            "caption": "Made with tender pasta, smoked salami, fresh veggies and herbs, two types of cheese, and a tangy homemade Italian dressing.",
+            "price": "16,50",
+            "img": "img/pasta/ItalianPastaSalad.jpg"
+        },
+        "Creamy Caprese Stuffed Shells": {
+            "caption": "With a sun-dried tomato cream sauce, these stuffed shells will transport you straight to Italy.",
+            "price": "12,75",
+            "img": "img/pasta/CreamyCapreseStuffedShells.jpg"
+        },
+        "Chicken Piccata Pasta": {
+            "caption": "This chicken piccata pasta’s lemony white wine, butter and caper sauce makes a light and snappy coating for linguine with tomato bursts and mushrooms for an easy pasta dinner that won’t weigh you down.",
+            "price": "14,10",
+            "img": "img/pasta/ChickenPiccataPasta.jpg"
+        },
+        "Spaghetti with Turkey Ragu": {
+            "caption": "Made with ground turkey, white wine, and crushed tomatoes.",
+            "price": "15,70",
+            "img": "img/pasta/SpaghettiwithTurkeyRagu.jpg"
+        },
+        "Orecchiette with Broccoli Rabe": {
+            "caption": "Orecchiette with Sausage and Broccoli Rabe uses chicken sausage in place of pork sausage and a whole lot of garlic!",
+            "price": "14,60",
+            "img": "img/pasta/OrecchiettewithBroccoliRabe.jpg"
+        },
+        "Lasagna Bolognese": {
+            "caption": "Layers of flat lasagna noodles baked with alternating layers of slow-cooked Bolognese sauce, bechamel, and Parmesan cheese.",
+            "price": "13,30",
+            "img": "img/pasta/LasagnaBolognese.png"
+        },
+        "Lamb Ragu": {
+            "caption": "Succulent lamb shoulder is slowly braised with onions, carrots, celery, tomatoes, & hardy herbs, yielding an intensely flavorful lamb ragu sauce perfectly paired with pappardelle.",
+            "price": "15,80",
+            "img": "img/pasta/LambRagu.png"
+        },
+        "Lemon Ricotta Pasta": {
+            "caption": "Pasta, lemon, ricotta, garlic and parmesan all  mixed together with a little magic starchy pasta water.",
+            "price": "15,90",
+            "img": "img/pasta/LemonRicottaPasta.png"
+        },
+        "One Pot Cajun Chicken Pasta": {
+            "caption": "Made with chicken, pasta and veggies that’s all coated in a creamy cajun seasoned sauce.",
+            "price": "13,80",
+            "img": "img/pasta/OnePotCajunChickenPasta.jpg"
+        },
+        "Chicken Stroganoff": {
+            "caption": "Includes savory browned onions and mushrooms, vibrant garlic and a creamy, tangy sauce, all of which is layered over a bed of tender egg noodles.",
+            "price": "15,75",
+            "img": "img/pasta/ChickenStroganoff.jpg"
+        }
+    },
+    "SOUP": {
+        "Chicken Pozole Soup": {
+            "caption": "Pozole, derives much of its flavor from tangy ingredients like tomatillos, cilantro and green chiles.",
+            "price": "9,10",
+            "img": "img/soup/ChickenPozoleSoup.jpg"
+        },
+        "Taco Soup": {
+            "caption": "The beef is flavored with sautéed onions and taco seasoning, then mixed with beans and corn for heartiness and texture.",
+            "price": "8,10",
+            "img": "img/soup/TacoSoup.jpg"
+        },
+        "Lasagna Soup": {
+            "caption": "It’s loaded with beef, tomatoes and Italian herbs and the melty cheese just takes it over the top.",
+            "price": "7,50",
+            "img": "img/soup/LasagnaSoup.jpg"
+        },
+        "Slow Cooker Minestrone Soup": {
+            "caption": "Minestrone Soup – this healthy hearty soup is brimming with fresh vegetables, protein rich beans and tender pasta.",
+            "price": "8,90",
+            "img": "img/soup/SlowCookerMinestroneSoup.jpg"
+        },
+        "Creamy Chicken Tortilla Soup": {
+            "caption": "A hearty, warming and comforting soup made with juicy chicken, vegetables and loaded with delicious toppings.",
+            "price": "6,80",
+            "img": "img/soup/CreamyChickenTortillaSoup.jpg"
+        },
+        "Creamy Mexican Corn Chowder": {
+            "caption": "You get lots of veggies – corn, chilies, peppers, tomatoes. Then you get the protein packed hearty chicken breasts and beans, and it’s all soaking in a rich, creamy, cheesy, Mexican spiced broth.",
+            "price": "8,60",
+            "img": "img/soup/CreamyMexicanCornChowder.jpg"
+        },
+        "Tortellini Soup": {
+            "caption": "Full of Italian sausage, tortellini, tomatoes, kale, and a touch of cream for good measure.",
+            "price": "7,90",
+            "img": "img/soup/TortelliniSoup.jpg"
+        },
+        "Sweet Potato Soup": {
+            "caption": "Made with veggies, coconut milk, and spices, it's rich, creamy, and delicious.",
+            "price": "7,55",
+            "img": "img/soup/SweetPotatoSoup.jpg"
+        },
+        "Tomato Basil Soup": {
+            "caption": "Made with fresh tomatoes and basil, it's nourishing and delicious.",
+            "price": "7,90",
+            "img": "img/soup/TomatoBasilSoup.jpg"
+        },
+        "Broccoli Chowder": {
+            "caption": "Nutmeg seasons the light creamy broth that's chock-full of tender broccoli florets and diced potatoes.",
+            "price": "8,90",
+            "img": "img/soup/BroccoliChowder.jpg"
+        },
+        "Pasta Fagioli Soup": {
+            "caption": "With fresh spinach, pasta and seasoned sausage, this fast-to-fix soup is a meal on its own.",
+            "price": "8,60",
+            "img": "img/soup/PastaFagioliSoup.webp"
+        },
+        "Fennel Carrot Soup": {
+            "caption": "It gets its delicious flavor from toasted fennel seeds—a pleasant complement to the carrots, apple and sweet potato.",
+            "price": "9,40",
+            "img": "img/soup/FennelCarrotSoup.jpg"
+        },
+        "Mulligatawny soup": {
+            "caption": "A hearty root veg and chicken soup, spiced with curry powder.",
+            "price": "8,30",
+            "img": "img/soup/Mulligatawnysoup.jpg"
+        },
+        "Courgette and mint soup": {
+            "caption": "This vibrant, summery soup is packed with courgette, fresh mint and lemon zest.",
+            "price": "8,80",
+            "img": "img/soup/Courgetteandmintsoup.jpg"
+        },
+        "Egg drop soup": {
+            "caption": "It’s made with lightly-seasoned chicken or veggie broth, and filled with delicious egg “ribbons”, which are created by whisking raw eggs into the simmering broth.",
+            "price": "9,20",
+            "img": "img/soup/EGGDROPSOUP.jpg"
+        }
+    }
+}

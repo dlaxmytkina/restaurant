@@ -1,21 +1,34 @@
-$(function () { 
-     let scrollTop = $(window).scrollTop();
-    let scrollBottom = $(window).scrollTop() + $(window).height() - 1;
+$(function () {
+    if(document.location.hash === "#booking"){
+        let top = $('.booking').offset().top;
+        $('html, body').animate({ scrollTop: top }, 1500);
+    }
   
-scrollAnimate(scrollBottom, scrollTop);
-$('.menu_icon ').click(function(){
-    $('.dark').toggle();
-    $('.menu_icon').toggleClass('menu_open_icon');
-    $('.header_adaptive').toggleClass('menu_open');
-   
-})
+    let responseData = '';
+    $.get("./menuItem.json").then(function (data) {
+        responseData = data;
+        console.log(Object.keys(responseData.DESSERT).length)
+        pasteMenuItem($(".changePosition").eq(0));
+       
+    }
+    );
+
+    let scrollTop = $(window).scrollTop();
+    let scrollBottom = $(window).scrollTop() + $(window).height() - 1;
+
+    scrollAnimate(scrollBottom, scrollTop);
+    
+    $('.menu .section').click(function () {
+        $('.menu .section span').removeClass('activMenuSection');
+        $(this).children().addClass('activMenuSection');
+        loadMenuItem()
+    })
 
     $('a').click(function (e) {
-
         e.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
-        $('html, body').animate({ scrollTop: top }, 1500);
+        $('html, body').animate({ scrollTop: top }, top/2);
 
     });
 
@@ -28,89 +41,108 @@ $('.menu_icon ').click(function(){
         }
     }
 
-    $(window).scroll(function(){
+    $(window).scroll(function (e) {
         scrollTop = $(window).scrollTop();
         scrollBottom = $(window).scrollTop() + $(window).height() - 1;
-         
-         scrollAnimate(scrollBottom, scrollTop);
+        scrollAnimate();
     })
 
-    function scrollAnimate(scrollBottom, scrollTop){
-         
-
-        if (pos(".block_aboutUs").top < scrollBottom && pos($(".block_aboutUs ")).bottom > scrollTop) {
-
-            $('.block_aboutUs .flex_block').css({
-                'animation': 'slideUp 1.5s',
-                'opacity': '1'
-            });
-
+    function showAnimate() {
+        return {
+            'animation': 'slideUp 1.5s',
+            'opacity': '1'
         }
-        if (pos(".block_team ").top < scrollBottom && pos(".block_team ").bottom > scrollTop) {
-
-            $('.block_team .flex_block').css({
-                'animation': 'slideUp 1.5s',
-                'opacity': '1'
-            });
-
+    }
+    function checkAnimateBlock(blockName, childName) {
+        if (pos(blockName).top < scrollBottom && pos(blockName).bottom > scrollTop) {
+            childName === undefined ?
+                $(`${blockName} .flex_block`).css(showAnimate()) :
+                $(`${blockName} ${childName}`).css(showAnimate())
         }
-
-        if (pos(".booking ").top < scrollBottom && pos(".booking ").bottom > scrollTop) {
-
-            $('.booking_form_block').css({
-                'animation': 'scale 1.5s',
-                'opacity': '1'
-            });
-
+    }
+    function scrollAnimate() {
+        let blockArr = [".block_aboutUs", , ".block_team", , ".block_specialties ", , ".block_privateEvents ", , ".booking", ".booking_form_block"];
+        for (i = 0; i < blockArr.length / 2; i++) {
+            checkAnimateBlock(blockArr[i * 2], blockArr[i * 2 + 1]);
         }
-
-        if (pos(".block_specialties ").top < scrollBottom && pos(".block_specialties ").bottom > scrollTop) {
-
-            $('.block_specialties .flex_block').css({
-                'animation': 'slideUp 1.5s',
-                'opacity': '1'
-            });
-
-        }
-        if (pos(".block_menu ").top < scrollBottom && pos(".block_menu ").bottom > scrollTop) {
-
-            $('.block_menu .menu').css({'animation':'slideUp 1.5s', 'opacity':'1'});
-
-        }
-        if (pos(".block_privateEvents ").top < scrollBottom && pos(".block_privateEvents ").bottom > scrollTop) {
-
-            $('.block_privateEvents .flex_block').css({
-                'animation': 'slideUp 1.5s',
-                'opacity': '1'
-            });
-
-        }
-      
     }
 
     var booking_input = $('input');
-    var menu_position = `<div class="position">
-                        <div>
-                            <h4>PIZZA QUATRO STAGIONI . . .  &nbsp</h4>
-                            <p>Integer ullamcorper neque eu purus euismod</p>
-                        </div>
-                        <h4>55,68 USD</h4>
-                    </div>`;
 
-    (function () {
-        for (i = 0; i < 21; i++) {
-            $('.menu_positions').append(menu_position);
-            $('.menu_positions').append('');
-            console.log(i)
+    let animationMove = $(".menu_positions").offset().left + $(".menu_positions").width();
+
+    function loadMenuItem() {
+       
+        $({ translate: 0 }).animate({
+            translate: -animationMove
+        }, {
+            duration: 1500,
+            step: function (now, fx) {
+                $(".changePosition").eq(0).css('transform', 'translateX(' + now + 'px)')
+            },
+            complete: function(){
+                $(".changePosition").eq(0).remove();
+                $('.dopWhiteBlock').hide();
+            }
+        });
+        menuItem();
+    };
+
+
+    function menuItem() {
+       let changePosition = $(".changePosition").eq(1);
+       pasteMenuItem(changePosition);
+       let dopHeight = changePosition.height() - $(".changePosition").eq(0).height();
+       
+       $('.dopWhiteBlock').css("height",dopHeight);
+       $('.dopWhiteBlock').slideDown(1500);
+        $({ translate: animationMove }).animate({
+            translate: 0
+        }, {
+            duration: 1500,
+            step: function (now, fx) {
+                changePosition.css('transform', 'translateX(' + now + 'px)')
+            }
+        });
+
+
+    }
+
+
+    function pasteMenuItem(changePosition){
+        
+        let activeSection = $('.menu .activMenuSection').text();
+        let menuData = responseData[activeSection];
+        console.log(changePosition)
+        $(".menu_positions").append("<div class='changePosition'></div>");
+        for (var key in menuData) {
+            let menu_position = `
+                    <div class="position">
+                        <div>
+                            <h4>${key}</h4>
+                            <p>${menuData[key]['caption']}</p>
+                        </div>
+                        <h4>${menuData[key]['price']} USD</h4>
+                    </div>
+                `;
+            changePosition.append(menu_position);
         }
-    }());
+        $('.changePosition .position').click(positionClick)
+    
+    }
+
+    function positionClick () {
+        let hash = $(this).find("h4").eq(0).text();
+      
+        //  document.location.href = 
+         window.open(`./menuItem.html#${hash}`);
+    }
     let today = new Date();
     hour = today.getHours(),
         min = today.getMinutes(),
         day = today.getDate(),
         month = today.getMonth() + 1;
     year = today.getFullYear()
-    console.log(year);
 
     if (today.getDate() < 10) {
         day = `0${day}`;
@@ -121,7 +153,6 @@ $('.menu_icon ').click(function(){
 
     booking_input.each(function () {
         if ($(this).attr('placeholder') === 'Date (mm/dd)') {
-            console.log('ggg');
             $(this).attr('min', `${year}-${month}-${day}`);
             if ((today.getMonth() + 3) < 10) {
                 month = `0${today.getMonth() + 3}`;
@@ -140,5 +171,8 @@ $('.menu_icon ').click(function(){
         })
     }
     )
+
+   
+
 
 })

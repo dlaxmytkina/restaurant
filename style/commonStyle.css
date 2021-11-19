@@ -1,0 +1,170 @@
+:root {
+  font-size: 10px;
+}
+
+@media (max-width: 1100px) {
+  :root {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 580px) {
+  :root {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 370px) {
+  :root {
+    font-size: 7px;
+  }
+}
+
+@font-face {
+  font-family: "Banny Bold Round";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Banny Bold Round"), url("../fonts/Banny-BoldRound.woff") format("woff");
+}
+
+/* frank-ruhl-libre-regular - latin */
+@font-face {
+  font-family: 'Frank Ruhl Libre';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/frank-ruhl-libre-v6-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/frank-ruhl-libre-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/frank-ruhl-libre-v6-latin-regular.woff2") format("woff2"), url("../fonts/frank-ruhl-libre-v6-latin-regular.woff") format("woff"), url("../fonts/frank-ruhl-libre-v6-latin-regular.ttf") format("truetype"), url("../fonts/frank-ruhl-libre-v6-latin-regular.svg#FrankRuhlLibre") format("svg");
+  /* Legacy iOS */
+}
+
+/* cormorant-unicase-regular - latin */
+@font-face {
+  font-family: 'Cormorant Unicase';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/cormorant-unicase-v13-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/cormorant-unicase-v13-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/cormorant-unicase-v13-latin-regular.woff2") format("woff2"), url("../fonts/cormorant-unicase-v13-latin-regular.woff") format("woff"), url("../fonts/cormorant-unicase-v13-latin-regular.ttf") format("truetype"), url("../fonts/cormorant-unicase-v13-latin-regular.svg#CormorantUnicase") format("svg");
+  /* Legacy iOS */
+}
+
+/* cormorant-regular - latin */
+@font-face {
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/cormorant-v11-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/cormorant-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/cormorant-v11-latin-regular.woff2") format("woff2"), url("../fonts/cormorant-v11-latin-regular.woff") format("woff"), url("../fonts/cormorant-v11-latin-regular.ttf") format("truetype"), url("../fonts/cormorant-v11-latin-regular.svg#Cormorant") format("svg");
+  /* Legacy iOS */
+}
+
+/* courgette-regular - latin */
+@font-face {
+  font-family: "Courgette";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/courgette-v8-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/courgette-v8-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/courgette-v8-latin-regular.woff2") format("woff2"), url("../fonts/courgette-v8-latin-regular.woff") format("woff"), url("../fonts/courgette-v8-latin-regular.ttf") format("truetype"), url("../fonts/courgette-v8-latin-regular.svg#Courgette") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v23-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/open-sans-v23-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v23-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v23-latin-700.woff") format("woff"), url("../fonts/open-sans-v23-latin-700.ttf") format("truetype"), url("../fonts/open-sans-v23-latin-700.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Open Sans normal";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/open-sans-v23-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/open-sans-v23-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v23-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v23-latin-regular.woff") format("woff"), url("../fonts/open-sans-v23-latin-regular.ttf") format("truetype"), url("../fonts/open-sans-v23-latin-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+
+body,
+ul,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.svgLogo {
+  fill: #e8c300;
+}
+
+.svgLogo g {
+  -webkit-transform: translateX(530px);
+          transform: translateX(530px);
+}
+
+.svgLogo text {
+  font: 240px "Banny Bold Round";
+}
+
+.wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 90%;
+  height: inherit;
+}
+
+.color-line {
+  height: 0.5rem;
+  width: 6rem;
+  border-radius: 50px;
+  background-color: #e8c300;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  font-family: 'Frank Ruhl Libre';
+}
+
+h2 {
+  font-size: 3.6rem;
+  text-align: center;
+  font-family: "Banny Bold Round";
+  line-height: 133%;
+  text-transform: uppercase;
+}
+
+footer {
+  background: #000000e5;
+  color: #ffffff80;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10rem;
+  width: 100%;
+  letter-spacing: 1px;
+  font-family: "Open Sans normal";
+}
+/*# sourceMappingURL=commonStyle.css.map */
