@@ -520,7 +520,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60rem;
+  height: 55rem;
 }
 
 .menuItem_block .wrapper .menuItem .menuItem_img_block::before,
