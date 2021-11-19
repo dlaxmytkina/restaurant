@@ -117,7 +117,10 @@ $(document).ready(function () {
     $(".menuItem").on('click', '.selectItem .list div', changeSelected)
     $(".menuItem").on('click', '.shopping_bag_button', addToBag)
     $(".blur").click(function () {
-        $('.shoppingBag, .blur').hide(300)
+        $('.shoppingBag, .blur').hide(300, function(){
+            $('.selectItemInfo').remove()
+        });
+
 
     })
 
