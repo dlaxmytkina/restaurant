@@ -1,15 +1,15 @@
 $(function () {
-    if(document.location.hash === "#booking"){
+    if (document.location.hash === "#booking") {
         let top = $('.booking').offset().top;
         $('html, body').animate({ scrollTop: top }, 1500);
     }
-  
+
     let responseData = '';
     $.get("./menuItem.json").then(function (data) {
         responseData = data;
         console.log(Object.keys(responseData.DESSERT).length)
         pasteMenuItem($(".changePosition").eq(0));
-       
+
     }
     );
 
@@ -17,7 +17,7 @@ $(function () {
     let scrollBottom = $(window).scrollTop() + $(window).height() - 1;
 
     scrollAnimate(scrollBottom, scrollTop);
-    
+
     $('.menu .section').click(function () {
         $('.menu .section span').removeClass('activMenuSection');
         $(this).children().addClass('activMenuSection');
@@ -28,7 +28,7 @@ $(function () {
         e.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
-        $('html, body').animate({ scrollTop: top }, top/2);
+        $('html, body').animate({ scrollTop: top }, top / 2);
 
     });
 
@@ -72,7 +72,7 @@ $(function () {
     let animationMove = $(".menu_positions").offset().left + $(".menu_positions").width();
 
     function loadMenuItem() {
-       
+
         $({ translate: 0 }).animate({
             translate: -animationMove
         }, {
@@ -80,7 +80,7 @@ $(function () {
             step: function (now, fx) {
                 $(".changePosition").eq(0).css('transform', 'translateX(' + now + 'px)')
             },
-            complete: function(){
+            complete: function () {
                 $(".changePosition").eq(0).remove();
                 $('.dopWhiteBlock').hide();
             }
@@ -90,12 +90,12 @@ $(function () {
 
 
     function menuItem() {
-       let changePosition = $(".changePosition").eq(1);
-       pasteMenuItem(changePosition);
-       let dopHeight = changePosition.height() - $(".changePosition").eq(0).height();
-       
-       $('.dopWhiteBlock').css("height",dopHeight);
-       $('.dopWhiteBlock').slideDown(1500);
+        let changePosition = $(".changePosition").eq(1);
+        pasteMenuItem(changePosition);
+        let dopHeight = changePosition.height() - $(".changePosition").eq(0).height();
+
+        $('.dopWhiteBlock').css("height", dopHeight);
+        $('.dopWhiteBlock').slideDown(1500);
         $({ translate: animationMove }).animate({
             translate: 0
         }, {
@@ -109,8 +109,8 @@ $(function () {
     }
 
 
-    function pasteMenuItem(changePosition){
-        
+    function pasteMenuItem(changePosition) {
+
         let activeSection = $('.menu .activMenuSection').text();
         let menuData = responseData[activeSection];
         console.log(changePosition)
@@ -128,51 +128,48 @@ $(function () {
             changePosition.append(menu_position);
         }
         $('.changePosition .position').click(positionClick)
-    
+
     }
 
-    function positionClick () {
+    function positionClick() {
         let hash = $(this).find("h4").eq(0).text();
-      
-        //  document.location.href = 
-         window.open(`./menuItem.html#${hash}`);
-    }
-    let today = new Date();
-    hour = today.getHours(),
-        min = today.getMinutes(),
-        day = today.getDate(),
-        month = today.getMonth() + 1;
-    year = today.getFullYear()
 
-    if (today.getDate() < 10) {
-        day = `0${day}`;
+        //  document.location.href = 
+        window.open(`./menuItem.html#${hash}`);
     }
-    if (month < 10) {
-        month = `0${month}`;
-    }
+
 
     booking_input.each(function () {
-        if ($(this).attr('placeholder') === 'Date (mm/dd)') {
-            $(this).attr('min', `${year}-${month}-${day}`);
-            if ((today.getMonth() + 3) < 10) {
-                month = `0${today.getMonth() + 3}`;
-            } else month = today.getMonth() + 3;
-            $(this).attr('max', `${year}-${month}-${day}`)
+        if ($(this).attr('placeholder') === 'Phone') {
+            $(this).mask("+375(99) 999-99-99");
         }
     })
 
-
-
-    booking_input.focus(function () {
-        booking_input.each(function () {
-            if ($(this).attr('placeholder') === 'Phone') {
-                $(this).mask("+375(99) 999-99-99");
-            }
-        })
+    $("#datepicker").datepicker({
+        dateFormat: "dd-mm",
+        maxDate: "14",
+        minDate: '0',
+    });
+    $("#timepicker").timepicker({
+        timeFormat: 'hh:mm p',
+        interval: 60,
+        minTime: '08:00 AM',
+        maxTime: '11:00 PM',
+        startTime: '08:00 AM',
+        // dynamic: false,
+        // dropdown: true,
+        // scrollbar: true
     }
-    )
+    );
 
-   
+    $("form").submit(function (e) {
+        alert("success");
+        e.preventDefault();
+        document.forms[0].reset();
+
+        document.forms[1].reset();
+    });
+
 
 
 })
